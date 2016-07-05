@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Special order form</title>
+		<link rel="stylesheet" type="text/css" href="script.css" ></link>
+	</head>
+
+	<body>
+
+		<fieldset><legend>Special order</legend>
+			<p>Name: <input type="text" name="name" id="userName" /></p>
+			<p>Email: <input type="email" name="email" id="email" /></p>
+
+			<p>Upload your photo:</p>
+			<input type="file" name="user-photo" /><br />
+			<input type="submit" value="Upload" />
+
+			<p>Dimensions of painting (in inches) <br />
+				width: <input type="text" name="width" id="width" />
+				height: <input type="text" name="height" id="height" /></p>
+			
+
+			
+			<p>Does you order include a frame? <p>
+			<select name="frame">
+				<option value="noFrame">no frame</option>
+				<option value="wood">wood frame</option>
+				<option value="metal">metal frame</option>
+			</select>
+
+			<p>Date you would like your order by:</p>
+			<input type="date" name"dueDate" />
+
+			<p>How did you find me? <p>
+			<select name="referral">
+				<option value="artShow">art show</option>
+				<option value="friend">friend</option>
+				<option value="internet">internet search</option>
+				<option value="FAF">FAF</option>
+				<option value="other">other</option>
+			</select>
+
+
+			<p>Would you like to be signed up for Pat's monthly newsletter?<br /><input type="radio" name="newsletter" id="yes" />yes
+			<input type="radio" name="newsletter" id="no" />no</p>
+
+			<input type="submit" name="submit" value="Place order" onclick=thanks();/>
+		</fieldset>
+		<script src="script.js"></script>
+	</body>
+
+</html>
